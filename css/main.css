@@ -1,0 +1,100 @@
+/*
+[0]GENERAL
+[1]NAVIGATION
+[2]SECTION
+[3]FOOTER*/
+
+
+/*[0]GENERAL*/
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*[1]NAVIGATION*/
+nav{
+	font-family: 'Lobster', cursive;
+	background-color: #FE926B;
+	width: 100%;
+	height: 88px;
+}
+.nav-li, .avo-logo{
+	display: inline-block;
+}
+li{
+	padding: 10px;
+	display: inline-block;
+}
+nav a{
+	text-decoration: none;
+	color:#F8F2D2;
+}
+.nav-li{
+	position: absolute;
+	top: 20px;
+	right:15px;}
+/*[2]SECTION */
+section{
+	color:#86AB73;
+	font-family: 'Lobster', cursive;
+	font-size: 28px;
+}
+section.section{
+	width:100%;
+	background-color: #F8F2D2;
+}
+.left, .right{
+	width: 49%;
+	display: inline-block;
+	padding-bottom: 10%;
+}
+.right{
+	padding-top: 5%;
+	vertical-align: top;
+}
+.avo1{
+	padding: 5%;
+	padding-top: 10%;
+}
+.avo-tm{
+	font-weight: bold;
+}
+button{
+	color: #F8F2D2;
+	border:none;
+	padding: 1%;
+}
+.btn1{
+	background-color: #89B993;
+}
+.btn2{
+	background-color: #FE926B;
+}
+input{
+	border:none;
+	box-shadow: 5px 5px #BEB9C1;
+}
+::placeholder{
+	color:#BEB9C1;}
+.search{
+	padding: 5%;
+	float:right;
+}
+/*[3]FOOTER*/
+footer{
+	font-size: 
+	color: #F8F2D2;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	background-color: #89B993;
+}
+footer li{
+	display: inline-block;
+	list-style: none;
+}
+footer ul{
+	margin-top: 0;
+}
