@@ -2,7 +2,9 @@
 [0]GENERAL
 [1]NAVIGATION
 [2]SECTION
-[3]FOOTER*/
+[3]FOOTER
+[4]MEDIA QUERIES
+*/
 
 
 /*[0]GENERAL*/
@@ -61,11 +63,7 @@ section{
 	display: inline-block;
 }
 .right{
-	padding: 2%;
-	height: 40%;
-	position: absolute;
-	top: 25%;
-	right: 5%;
+	margin-left:0;
 	background-color: inherit;
 }
 .avo1{
@@ -103,8 +101,7 @@ input{
 }
 .fas{
 	position: relative;
-	right: 5%;
-	top: 5%;
+	padding: 2%;
 	z-index: 1;
 }
 p{
@@ -128,4 +125,82 @@ footer ul{
 }
 .fab{
 	color: #f8f2d2;
+}
+
+
+/*MEDIA QUERIES*/
+/*START POINT IS LAPTOP/DESKTOP SIZE*/
+
+/*TABLET SIZE/POINT AT WHICH RESIZING IS NEEDED*/
+@media only screen and (max-width: 655px){
+	section{
+		font-size: 16px;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 5%;
+	}
+	.nav a{
+		font-size: 14px;
+	}
+	.avo1{
+		width: 80%;
+		padding: 0;
+		margin: 0;
+	}
+	.avo-logo1{
+		width: 90%;
+	}
+	button{
+		margin: 0;
+		width: 45%;
+		font-size: 12px;
+		padding: 1%;
+	}
+	.btn1, .btn2{
+		margin: 0;
+		margin-bottom: 5%;
+
+	}
+	.left, .right{
+		margin-bottom: 5%;
+	}
+	.nav{
+		padding: 5% 0;
+	}
+
+}
+/*MOBILE SIZE/ POINT AT WHICH RESIZING IS NEEDED*/
+@media only screen and (max-width: 300px){
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.nav{
+		padding: 0;
+	}
+	.nav a{
+		font-size: 18px;
+	}
+	.avo-logo1{
+		width: 200%;
+	}
+	.left, .right{
+		display: block;
+		margin: 0 auto;
+		padding: 1%;
+	}
+	section{
+		margin: 0;
+		width: 100%
+		padding: 1%;
+	}
+	.btn1, .btn2{
+		display: block;
+		width: 100%;
+	}
+	input{
+		height: 20px;
+		margin-bottom: 5%;
+
+	}
 }
