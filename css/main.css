@@ -109,7 +109,7 @@ p{
 }
 /*[3]FOOTER*/
 footer{
-	padding: 1% 0;
+	padding: 1% 0 0 0;
 	font-size: 
 	color: #F8F2D2;
 	width: 100%;
@@ -130,77 +130,118 @@ footer ul{
 
 /*MEDIA QUERIES*/
 /*START POINT IS LAPTOP/DESKTOP SIZE*/
-
+/*MEDIA QUERIES NEED TO BE ADDED EVERYTIME THAT THE CODE DOESNT LOOK GOOD ANYMORE*/
+@media only screen and (max-width: 880px){
+	nav a{
+		font-size: 24px;
+	}
+@media only screen and (max-width: 730px){
+	nav a{
+		font-size: 22px;
+	}
 /*TABLET SIZE/POINT AT WHICH RESIZING IS NEEDED*/
-@media only screen and (max-width: 655px){
-	section{
-		font-size: 16px;
+@media only screen and (max-width: 700px){
+	.nav-li,
+	.avo-logo{
+		display: block;
+	}
+	.nav-li{
+		width: 100%;
 		padding: 0;
+	}
+	nav{
 		margin: 0;
-		margin-bottom: 5%;
+		padding: 0;
 	}
-	.nav a{
-		font-size: 14px;
+	nav ul{
+		margin: 0;
+		padding: 0;
+		text-align: center;
 	}
-	.avo1{
-		width: 80%;
+	nav a {
+		font-size: 18px;
+	}
+	.left, .right{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+		display: block;
+	}
+	.right{
+		font-size: 20px;
+		width: 90%;
+		padding-bottom: 5%;
+	}
+	section{
+		text-align: center;
 		padding: 0;
 		margin: 0;
 	}
 	.avo-logo1{
+		width: 80%;
+	}
+	.avo1{
+		width: 200px;
+		height: auto;
+		padding: 0;
+		padding-top: 5%;
+		margin: 0;
+	}
+	.search{
+		float: none;
+	}
+	.fas{
+		display: none;
+	}
+	input{
 		width: 90%;
 	}
-	button{
+	::placeholder{
+		font-size: 18px;
+	}
+	p{
 		margin: 0;
-		width: 45%;
-		font-size: 12px;
 		padding: 1%;
 	}
-	.btn1, .btn2{
+}
+@media only screen and (max-width: 400px){
+	.btn1,
+	.btn2{
+		padding: 1%;
+		font-size: 12px;
 		margin: 0;
-		margin-bottom: 5%;
-
 	}
-	.left, .right{
-		margin-bottom: 5%;
+}
+@media only screen and (max-width: 560px){
+	.avo-logo1{
+		width: 100%;
 	}
-	.nav{
-		padding: 5% 0;
+}
+@media only screen and (max-width: 400px){
+	.avo-logo1{
+		display: none;
 	}
-
+	nav a{
+		font-size: 16px;
+	}
+	nav ul{
+		padding-top: 10%;
+	}
 }
 /*MOBILE SIZE/ POINT AT WHICH RESIZING IS NEEDED*/
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 350px){
 	body{
 		margin: 0;
 		padding: 0;
 	}
-	.nav{
-		padding: 0;
-	}
-	.nav a{
-		font-size: 18px;
-	}
-	.avo-logo1{
-		width: 200%;
-	}
-	.left, .right{
-		display: block;
-		margin: 0 auto;
-		padding: 1%;
-	}
-	section{
-		margin: 0;
-		width: 100%
-		padding: 1%;
-	}
-	.btn1, .btn2{
+	button{
+		padding: 2%;
 		display: block;
 		width: 100%;
 	}
-	input{
-		height: 20px;
+	.btn1,
+	.btn2{
 		margin-bottom: 5%;
-
 	}
 }
