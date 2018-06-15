@@ -59,10 +59,15 @@ section{
 	background-color: #F8F2D2;
 }
 .left, .right{
-	width: 49%;
+	width: 46%;
 	display: inline-block;
 }
+.left{
+	text-align: center;
+}
 .right{
+	text-align: left;
+	padding-right: 3%;
 	margin-left:0;
 	background-color: inherit;
 }
@@ -109,8 +114,8 @@ p{
 }
 /*[3]FOOTER*/
 footer{
-	padding: 1% 0 0 0;
-	font-size: 
+	padding:0;
+	font-size: ;
 	color: #F8F2D2;
 	width: 100%;
 	text-align: center;
@@ -124,6 +129,7 @@ footer ul{
 	margin-top: 0;
 }
 .fab{
+	font-size: 30px;
 	color: #f8f2d2;
 }
 
@@ -234,6 +240,9 @@ footer ul{
 	body{
 		margin: 0;
 		padding: 0;
+	}
+	.right{
+		text-align: center;
 	}
 	button{
 		padding: 2%;
